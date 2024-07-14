@@ -1,2 +1,2 @@
 compilation:
-	gcc -o sudoku main.c sudoku.c io.c -lm 
+		gcc -o sudoku main.c lib/sudoku.c lib/io.c -I./header -lm

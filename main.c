@@ -1,11 +1,11 @@
-#include "sudoku.h"
-#include "io.h"
+#include "header/sudoku.h"
+#include "header/io.h"
 #include <stdlib.h>
 
 int main() {
     int matrix[N][N];
-    const char* inputFilename = "sudoku_input.txt";
-    const char* outputFilename = "sudoku_output.txt";
+    const char* inputFilename = "./sudoku_input.txt";
+    const char* outputFilename = "./sudoku_output.txt";
 
     if (!readSudoku(inputFilename, matrix)) {
         fprintf(stderr, "Failed to read Sudoku from file.\n");
@@ -13,7 +13,7 @@ int main() {
     }
 
     printSudoku(matrix);
-    printf("Ecco il Sudoku risolto: \n");
+    printf("\nSolving...\n");
     if (solveSudoku(matrix)) {
         printSudoku(matrix);
         if (!writeSudoku(outputFilename, matrix)) {

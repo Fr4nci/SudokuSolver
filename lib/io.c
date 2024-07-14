@@ -1,5 +1,4 @@
 #include "../header/io.h"
-#include "../header/sudoku.h"
 
 void printSudoku(int matrix[9][9]) {
     printf("----------------------------------\n");
