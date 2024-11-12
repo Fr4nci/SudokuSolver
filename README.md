@@ -1,6 +1,6 @@
 # Simple Sudoku Solver
 
-Simple program written in C by me for solving $3 \times 3$ Sudoku.
+Simple program written in C by me for solving $9 \times 9$ Sudoku.
 
 ## Usage
 
